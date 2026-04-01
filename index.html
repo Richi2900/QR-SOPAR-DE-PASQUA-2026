@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documento PDF</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+
+    .topbar {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-bottom: 1px solid #dcdcdc;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .viewer {
+      width: 100%;
+      height: calc(100% - 56px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Documento PDF</div>
+  <iframe class="viewer" src="documento.pdf"></iframe>
+</body>
+</html>
